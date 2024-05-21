@@ -3,7 +3,8 @@ import os
 
 from pyppeteer import launch
 
-PDF_BUCKET = 'pdf_bucket'
+
+PDF_BUCKET = "pdf_bucket"
 
 
 def type_url():
@@ -24,6 +25,7 @@ async def make_web_page_as_pdf(url, pdf_path_to_save):
     await page.pdf({"path": pdf_path_to_save, "format": "A2", "scale": 1})
 
     await browser.close()
+
 
 url, pdf_path = type_url()
 
