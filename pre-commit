@@ -1,0 +1,3 @@
+isrot --settings-file ./.isort.cfg .
+black --confing ./.black .
+flake8 --config .flake8 .
